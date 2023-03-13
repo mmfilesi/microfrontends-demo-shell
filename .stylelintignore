@@ -1,0 +1,6 @@
+dist
+node_modules
+projects/riu-library/src/assets/icons/riu-icons-v2.0/
+projects/riu-library/src/assets/riu-scss/_iotacss
+riu-apps
+tools

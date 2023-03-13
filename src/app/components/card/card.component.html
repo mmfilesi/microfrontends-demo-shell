@@ -1,0 +1,11 @@
+<div class="app-card">
+  <header>
+    <img [src]="img" class="app-card__picture" width="35px" height="35px">
+    <h5 class="app-card__title">{{title}}</h5>
+  </header>
+  <div class="app-card__content">
+    {{content}}
+  </div>
+  <div *ngIf="link" class="app-card__actions" (click)="setView()">
+    ver
+  </div>

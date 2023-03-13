@@ -1,0 +1,40 @@
+.app-card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-sizing: border-box;
+  padding: 1rem;
+
+  &:hover {
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-variant: small-caps;
+    margin: 0 0.5rem;
+    display: inline-block;
+  }
+
+  &__picture {
+    display: inline-block;
+  }
+
+  &__content {
+    margin: 1rem 0;
+    line-height: 160%;
+  }
+
+  &__actions {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

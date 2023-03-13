@@ -1,0 +1,16 @@
+<div class="monkey-wrap">
+  <h3>Monkey app wrapper</h3>
+
+  <monkey-app
+    *axLazyElement="elementUrl"
+    [monkeysNumber]="totalMonkeys"
+    (eat)="eat($event)"
+  >
+  </monkey-app>
+
+  <div class="app-actions"><button (click)="addMonkey()">add monkey</button></div>
+  <div class="app-actions"><button (click)="removeMonkey()">remove monkey</button></div>
+
+  <app-stock></app-stock>
+
+</div>

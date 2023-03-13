@@ -1,0 +1,43 @@
+.main-container {
+  font-family: Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-header {
+  display: flex;
+  max-width: 300px;
+}
+
+.app-header img {
+  width: 60px;
+  height: 60px;
+}
+
+.app-header__title {
+  font-size: 2rem;
+  flex-grow: 1;
+  margin: 0.5rem;
+}
+
+.app-actions {
+  margin: 0.5rem;
+}
+
+.app-actions button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.app-wrap {
+  max-width: 300px;
+}
+
+.app-content-aside {
+  font-size: 0.9rem;
+  line-height: 160%;
+}

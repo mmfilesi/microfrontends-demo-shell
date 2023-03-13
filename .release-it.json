@@ -1,0 +1,48 @@
+{
+  "git": {
+    "changelog": "git log --pretty=format:\"* %s (%h) by %an \" ${from}...${to}",
+    "push": true,
+    "requireBranch": "master",
+    "header": "# Changelog",
+    "commitMessage": "chore(release): ${version}",
+    "tagAnnotation": "v${version}"
+    },
+    "npm": {
+      "publish": false
+    },
+    "git.requireCommits": true,
+    "plugins": {
+      "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "chore",
+            "section": "Chore"
+          },
+          {
+            "type": "test",
+            "section": "QA"
+          },
+          {
+            "type": "ci",
+            "section": "CI"
+          }
+        ]
+      }
+    }
+},
+  "hooks": {
+    "before:init": ["npm run lint",  "npm run stylelint"],
+    "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
+  }
+}

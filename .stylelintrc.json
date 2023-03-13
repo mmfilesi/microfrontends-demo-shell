@@ -1,0 +1,28 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "plugins": ["stylelint-scss"],
+  "customSyntax": "postcss-scss",
+  "files": ["*.scss", "**/*.scss"],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "max-nesting-depth": 7,
+    "no-descending-specificity": null,
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": ["custom-elements"]
+      }
+    ],
+    "property-no-vendor-prefix": null,
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-comment", "after-declaration", "first-nested"]
+      }
+    ],
+    "no-empty-source": true,
+    "declaration-no-important": null,
+    "selector-class-pattern": null
+  }
+}

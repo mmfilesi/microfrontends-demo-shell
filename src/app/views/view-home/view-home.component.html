@@ -1,0 +1,13 @@
+<div class="home-wrap">
+  <h3>Home</h3>
+
+  <div>
+    <app-card
+      *ngFor="let card of cards"
+      [title]="card.title"
+      [content]="card.content"
+      [link]="card.link"
+      [img]="card.img"
+    ></app-card>
+  </div>
+</div>
